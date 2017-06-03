@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Tools.swift
 //  SwiftAlgorithm
 //
 //  Created by 王仕杰 on 2017/6/3.
@@ -8,13 +8,8 @@
 
 import Foundation
 
-var s = Stack<Int>()
+postfix operator /
 
-s.push(1)
-
-s/
-
-s.push(2)
-
-s/
-
+postfix func /<T> (element: T) {
+    print("\(element) --- Type: \(T.self)")
+}
