@@ -10,6 +10,7 @@
 		CCA3EB631EE2AC3600A40151 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB621EE2AC3600A40151 /* main.swift */; };
 		CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */; };
 		CCA3EB6D1EE2B07F00A40151 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6C1EE2B07F00A40151 /* Tools.swift */; };
+		CCA3EB6F1EE438F600A40151 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6E1EE438F600A40151 /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		CCA3EB621EE2AC3600A40151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		CCA3EB6C1EE2B07F00A40151 /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		CCA3EB6E1EE438F600A40151 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */,
+				CCA3EB6E1EE438F600A40151 /* Queue.swift */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 				CCA3EB6D1EE2B07F00A40151 /* Tools.swift in Sources */,
 				CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */,
 				CCA3EB631EE2AC3600A40151 /* main.swift in Sources */,
+				CCA3EB6F1EE438F600A40151 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
