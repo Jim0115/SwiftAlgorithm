@@ -8,13 +8,11 @@
 
 import Foundation
 
-var s = Stack<Int>()
+var q = OptimizedQueue<Int>()
 
-s.push(1)
+q.enqueue(1)
+q.enqueue(2)
 
-s/
+q.dequeue()
 
-s.push(2)
-
-s/
-
+q/
