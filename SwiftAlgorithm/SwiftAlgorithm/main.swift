@@ -8,11 +8,8 @@
 
 import Foundation
 
-var q = OptimizedQueue<Int>()
+let a = [1, 3, 5, 6, 2, 7, 4, 5]
 
-q.enqueue(1)
-q.enqueue(2)
+let b = InsertionSort.sort(a, isOrderedBy: <)
 
-q.dequeue()
-
-q/
+b/
