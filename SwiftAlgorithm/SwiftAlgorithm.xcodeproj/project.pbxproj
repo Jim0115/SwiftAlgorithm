@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CA2171EECFFC300FED945 /* InsertionSort.swift */; };
+		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CCA3EB631EE2AC3600A40151 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB621EE2AC3600A40151 /* main.swift */; };
 		CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */; };
 		CCA3EB6D1EE2B07F00A40151 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6C1EE2B07F00A40151 /* Tools.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		CC3CA2171EECFFC300FED945 /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CCA3EB5F1EE2AC3600A40151 /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA3EB621EE2AC3600A40151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 			name = Sort;
 			sourceTree = "<group>";
 		};
+		CC5091AF1F2454BA005E7622 /* Recursion */ = {
+			isa = PBXGroup;
+			children = (
+				CC5091B01F2454FE005E7622 /* Hanoi.swift */,
+			);
+			name = Recursion;
+			sourceTree = "<group>";
+		};
 		CCA3EB561EE2AC3600A40151 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		CCA3EB611EE2AC3600A40151 /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				CC5091AF1F2454BA005E7622 /* Recursion */,
 				CC3CA2161EECFFA900FED945 /* Sort */,
 				CCA3EB691EE2ACA300A40151 /* DataStructure */,
 				CCA3EB621EE2AC3600A40151 /* main.swift */,
@@ -152,6 +163,7 @@
 				CCA3EB6D1EE2B07F00A40151 /* Tools.swift in Sources */,
 				CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */,
 				CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */,
+				CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */,
 				CCA3EB631EE2AC3600A40151 /* main.swift in Sources */,
 				CCA3EB6F1EE438F600A40151 /* Queue.swift in Sources */,
 			);

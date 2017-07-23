@@ -8,8 +8,10 @@
 
 import Foundation
 
-let a = [1, 3, 5, 6, 2, 7, 4, 5]
+//let a = [1, 3, 5, 6, 2, 7, 4, 5]
+//
+//let b = InsertionSort.sort(a, isOrderedBy: <)
+//
+//b/
 
-let b = InsertionSort.sort(a, isOrderedBy: <)
-
-b/
+Hanoi.hanio(n: 3, x: "A", y: "B", z: "C")
