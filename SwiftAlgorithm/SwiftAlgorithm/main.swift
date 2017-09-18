@@ -8,10 +8,9 @@
 
 import Foundation
 
-//let a = [1, 3, 5, 6, 2, 7, 4, 5]
-//
-//let b = InsertionSort.sort(a, isOrderedBy: <)
-//
-//b/
+let a = [1, 3, 5, 6, 2, 7, 4, 5]
 
-Hanoi.hanio(n: 3, x: "A", y: "B", z: "C")
+let b = MergeSort.sort(a, isOrderedBy: <)
+
+b/
+
