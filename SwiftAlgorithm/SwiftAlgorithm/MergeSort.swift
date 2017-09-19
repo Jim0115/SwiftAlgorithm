@@ -26,7 +26,7 @@ struct MergeSort {
     ///   - left: 待合并有序数组
     ///   - right: 待合并有序数组
     /// - Returns: 合并后数组
-    static func merge<T: Comparable>(left: [T], right: [T], isOrderedBy: (T, T) -> Bool) -> [T] {
+    private static func merge<T: Comparable>(left: [T], right: [T], isOrderedBy: (T, T) -> Bool) -> [T] {
         var leftIndex = 0
         var rightIndex = 0
         var orderedArray = [T]()
@@ -53,4 +53,6 @@ struct MergeSort {
         
         return orderedArray
     }
+    
+    private init() {}
 }
