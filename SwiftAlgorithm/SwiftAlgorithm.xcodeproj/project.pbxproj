@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CA2171EECFFC300FED945 /* InsertionSort.swift */; };
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
+		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
 		CCA3EB631EE2AC3600A40151 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB621EE2AC3600A40151 /* main.swift */; };
 		CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */; };
 		CCA3EB6D1EE2B07F00A40151 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6C1EE2B07F00A40151 /* Tools.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		CC3CA2171EECFFC300FED945 /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
+		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
 		CCA3EB5F1EE2AC3600A40151 /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA3EB621EE2AC3600A40151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -67,6 +69,22 @@
 			name = Recursion;
 			sourceTree = "<group>";
 		};
+		CC53C3881F7135DF0000B30C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CC53C3891F7135E30000B30C /* String Search */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		CC53C3891F7135E30000B30C /* String Search */ = {
+			isa = PBXGroup;
+			children = (
+				CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */,
+			);
+			name = "String Search";
+			sourceTree = "<group>";
+		};
 		CCA3EB561EE2AC3600A40151 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +104,7 @@
 		CCA3EB611EE2AC3600A40151 /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				CC53C3881F7135DF0000B30C /* Search */,
 				CC5091AF1F2454BA005E7622 /* Recursion */,
 				CC3CA2161EECFFA900FED945 /* Sort */,
 				CCA3EB691EE2ACA300A40151 /* DataStructure */,
@@ -167,6 +186,7 @@
 				CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */,
 				CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */,
 				CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */,
+				CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */,
 				CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */,
 				CCA3EB631EE2AC3600A40151 /* main.swift in Sources */,
 				CCA3EB6F1EE438F600A40151 /* Queue.swift in Sources */,

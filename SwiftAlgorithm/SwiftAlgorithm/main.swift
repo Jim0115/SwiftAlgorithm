@@ -8,9 +8,4 @@
 
 import Foundation
 
-let a = [1, 3, 5, 6, 2, 7, 4, 5]
-
-let b = MergeSort.sort(a, isOrderedBy: <)
-
-b/
-
+"hello, world".boyerMooreIndex(of: "world")!.encodedOffset/
