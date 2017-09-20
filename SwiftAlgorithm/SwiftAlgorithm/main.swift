@@ -8,5 +8,5 @@
 
 import Foundation
 
-LinearSearch.search([1, 2, 3, 4, 5], 2)/
-LinearSearch.search([1, 2, 3, 4, 5], 6)/
+//BinarySearch.search([1, 2, 3, 4, 5], 2)/
+LinearSearch.search(Array(0...100), 6)/

@@ -11,7 +11,6 @@ struct LinearSearch {
     private init() {}
     
     static func search<T: Equatable>(_ array: [T], _ object: T) -> Int? {
-        T.self/
         for (index, obj) in array.enumerated() where obj == object {
             return index
         }

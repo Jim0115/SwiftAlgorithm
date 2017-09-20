@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CC329CA91F7296AD00D45FC7 /* LinearSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */; };
+		CC329CAB1F72980300D45FC7 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAA1F72980300D45FC7 /* BinarySearch.swift */; };
 		CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CA2171EECFFC300FED945 /* InsertionSort.swift */; };
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearch.swift; sourceTree = "<group>"; };
+		CC329CAA1F72980300D45FC7 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		CC3CA2171EECFFC300FED945 /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */,
+				CC329CAA1F72980300D45FC7 /* BinarySearch.swift */,
 				CC53C3891F7135E30000B30C /* String Search */,
 			);
 			name = Search;
@@ -190,6 +193,7 @@
 				CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */,
 				CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */,
 				CC329CA91F7296AD00D45FC7 /* LinearSearch.swift in Sources */,
+				CC329CAB1F72980300D45FC7 /* BinarySearch.swift in Sources */,
 				CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */,
 				CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */,
 				CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */,
