@@ -9,4 +9,4 @@
 import Foundation
 
 //BinarySearch.search([1, 2, 3, 4, 5], 2)/
-LinearSearch.search(Array(0...100), 6)/
+CountOccurrences.count(obj: 1000, inArray: Array(0...100))/
