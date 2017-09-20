@@ -8,4 +8,5 @@
 
 import Foundation
 
-"hello, world".boyerMooreIndex(of: "world")!.encodedOffset/
+LinearSearch.search([1, 2, 3, 4, 5], 2)/
+LinearSearch.search([1, 2, 3, 4, 5], 6)/
