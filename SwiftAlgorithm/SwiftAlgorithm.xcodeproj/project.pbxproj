@@ -10,6 +10,7 @@
 		CC329CA91F7296AD00D45FC7 /* LinearSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */; };
 		CC329CAB1F72980300D45FC7 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAA1F72980300D45FC7 /* BinarySearch.swift */; };
 		CC329CAD1F729CFA00D45FC7 /* CountOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAC1F729CFA00D45FC7 /* CountOccurrences.swift */; };
+		CC329CAF1F72A39900D45FC7 /* MinimumMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAE1F72A39900D45FC7 /* MinimumMaximum.swift */; };
 		CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CA2171EECFFC300FED945 /* InsertionSort.swift */; };
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
@@ -36,6 +37,7 @@
 		CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearch.swift; sourceTree = "<group>"; };
 		CC329CAA1F72980300D45FC7 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		CC329CAC1F729CFA00D45FC7 /* CountOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOccurrences.swift; sourceTree = "<group>"; };
+		CC329CAE1F72A39900D45FC7 /* MinimumMaximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumMaximum.swift; sourceTree = "<group>"; };
 		CC3CA2171EECFFC300FED945 /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */,
 				CC329CAA1F72980300D45FC7 /* BinarySearch.swift */,
 				CC329CAC1F729CFA00D45FC7 /* CountOccurrences.swift */,
+				CC329CAE1F72A39900D45FC7 /* MinimumMaximum.swift */,
 				CC53C3891F7135E30000B30C /* String Search */,
 			);
 			name = Search;
@@ -201,6 +204,7 @@
 				CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */,
 				CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */,
 				CC329CAD1F729CFA00D45FC7 /* CountOccurrences.swift in Sources */,
+				CC329CAF1F72A39900D45FC7 /* MinimumMaximum.swift in Sources */,
 				CCA3EB631EE2AC3600A40151 /* main.swift in Sources */,
 				CCA3EB6F1EE438F600A40151 /* Queue.swift in Sources */,
 			);
