@@ -14,6 +14,9 @@
 		CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CA2171EECFFC300FED945 /* InsertionSort.swift */; };
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
+		CC933FB31F7AA964000C3D7A /* StackAndQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */; };
+		CC933FB41F7AA978000C3D7A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */; };
+		CC933FB51F7AA978000C3D7A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6E1EE438F600A40151 /* Queue.swift */; };
 		CCA3EB631EE2AC3600A40151 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB621EE2AC3600A40151 /* main.swift */; };
 		CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */; };
 		CCA3EB6D1EE2B07F00A40151 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6C1EE2B07F00A40151 /* Tools.swift */; };
@@ -47,6 +50,7 @@
 		CC3CA2171EECFFC300FED945 /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
+		CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAndQueueTests.swift; sourceTree = "<group>"; };
 		CCA3EB5F1EE2AC3600A40151 /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA3EB621EE2AC3600A40151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			children = (
 				CCDA52AD1F74A511003F5C92 /* SearchTests.swift */,
 				CCDA52B11F74A66A003F5C92 /* SortTests.swift */,
+				CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */,
 				CCDA52A91F74A4F8003F5C92 /* Info.plist */,
 			);
 			path = AlgorithmTests;
@@ -279,7 +284,10 @@
 				CCDA52B01F74A568003F5C92 /* BinarySearch.swift in Sources */,
 				CCDA52B31F74A66F003F5C92 /* InsertionSort.swift in Sources */,
 				CCDA52B21F74A66A003F5C92 /* SortTests.swift in Sources */,
+				CC933FB41F7AA978000C3D7A /* Stack.swift in Sources */,
+				CC933FB31F7AA964000C3D7A /* StackAndQueueTests.swift in Sources */,
 				CCDA52AF1F74A566003F5C92 /* LinearSearch.swift in Sources */,
+				CC933FB51F7AA978000C3D7A /* Queue.swift in Sources */,
 				CCDA52AE1F74A511003F5C92 /* SearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
