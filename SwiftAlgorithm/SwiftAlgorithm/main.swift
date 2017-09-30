@@ -8,9 +8,4 @@
 
 import Foundation
 
-//BinarySearch.search([1, 2, 3, 4, 5], 2)/
-//CountOccurrences.count(obj: 1000, inArray: Array(0...100))/
-
-MinimumMaximum.minimumMaximum(Array(0...100))!/
-//MinimumMaximum.minimum(Array(0...100))!/
-
+KthLargest.randomizedSelect(array: [5, 2, 1, 3, 4], order: 1)/
