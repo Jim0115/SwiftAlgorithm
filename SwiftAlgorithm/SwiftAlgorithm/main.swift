@@ -8,4 +8,4 @@
 
 import Foundation
 
-KthLargest.randomizedSelect(array: [5, 2, 1, 3, 4], order: 1)/
+KthLargest.randomizedSelect(array: [7, 92, 23, 9, -1, 0, 11, 6], order: 4)/
