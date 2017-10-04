@@ -6,20 +6,18 @@
 //  Copyright © 2017年 王仕杰. All rights reserved.
 //
 
-struct BruteForce {
-    private init() {}
-    
-    static func index(of string: String, pattern: String) -> String.Index? {
-        for i in string.characters.indices {
+extension String {
+    func bruteForceindex(of pattern: String) -> String.Index? {
+        for i in characters.indices {
             var j = i
             var found = true
             
             for p in pattern.characters.indices {
-                if j == string.characters.endIndex || string[j] != pattern[p] {
+                if j == characters.endIndex || self[j] != pattern[p] {
                     found = false
                     break
                 } else {
-                    j = string.index(after: j)
+                    j = index(after: j)
                 }
             }
             
