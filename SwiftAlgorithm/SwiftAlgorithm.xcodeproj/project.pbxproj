@@ -25,6 +25,9 @@
 		CCCCEBD01F83247400043D58 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBCF1F83247400043D58 /* Sample.swift */; };
 		CCCCEBD21F83C04000043D58 /* Union-Find.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBD11F83C04000043D58 /* Union-Find.swift */; };
 		CCCCEBD41F8510B700043D58 /* Brute-Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBD31F8510B700043D58 /* Brute-Force.swift */; };
+		CCCCEBD61F85133000043D58 /* StringSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBD51F85133000043D58 /* StringSearchTests.swift */; };
+		CCCCEBD71F85141800043D58 /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
+		CCCCEBD81F85141B00043D58 /* Brute-Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBD31F8510B700043D58 /* Brute-Force.swift */; };
 		CCDA52AE1F74A511003F5C92 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA52AD1F74A511003F5C92 /* SearchTests.swift */; };
 		CCDA52AF1F74A566003F5C92 /* LinearSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */; };
 		CCDA52B01F74A568003F5C92 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAA1F72980300D45FC7 /* BinarySearch.swift */; };
@@ -64,6 +67,7 @@
 		CCCCEBCF1F83247400043D58 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		CCCCEBD11F83C04000043D58 /* Union-Find.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Union-Find.swift"; sourceTree = "<group>"; };
 		CCCCEBD31F8510B700043D58 /* Brute-Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brute-Force.swift"; sourceTree = "<group>"; };
+		CCCCEBD51F85133000043D58 /* StringSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSearchTests.swift; sourceTree = "<group>"; };
 		CCDA52A51F74A4F8003F5C92 /* AlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDA52A91F74A4F8003F5C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDA52AD1F74A511003F5C92 /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				CCDA52AD1F74A511003F5C92 /* SearchTests.swift */,
+				CCCCEBD51F85133000043D58 /* StringSearchTests.swift */,
 				CCDA52B11F74A66A003F5C92 /* SortTests.swift */,
 				CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */,
 				CCDA52A91F74A4F8003F5C92 /* Info.plist */,
@@ -296,14 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCCCEBD61F85133000043D58 /* StringSearchTests.swift in Sources */,
 				CCDA52B41F74A671003F5C92 /* MergeSort.swift in Sources */,
 				CCDA52B01F74A568003F5C92 /* BinarySearch.swift in Sources */,
 				CCDA52B31F74A66F003F5C92 /* InsertionSort.swift in Sources */,
 				CCDA52B21F74A66A003F5C92 /* SortTests.swift in Sources */,
 				CC933FB41F7AA978000C3D7A /* Stack.swift in Sources */,
 				CC933FB31F7AA964000C3D7A /* StackAndQueueTests.swift in Sources */,
+				CCCCEBD71F85141800043D58 /* Boyer-Moore.swift in Sources */,
 				CCDA52AF1F74A566003F5C92 /* LinearSearch.swift in Sources */,
 				CC933FB51F7AA978000C3D7A /* Queue.swift in Sources */,
+				CCCCEBD81F85141B00043D58 /* Brute-Force.swift in Sources */,
 				CCDA52AE1F74A511003F5C92 /* SearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

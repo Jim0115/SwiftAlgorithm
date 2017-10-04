@@ -7,7 +7,7 @@
 //
 
 extension String {
-    func bruteForceindex(of pattern: String) -> String.Index? {
+    func bruteForceIndex(of pattern: String) -> String.Index? {
         for i in characters.indices {
             var j = i
             var found = true

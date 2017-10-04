@@ -10,26 +10,33 @@ import XCTest
 
 class StringSearchTests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testBruteForce() {
+        XCTAssertNil("".bruteForceIndex(of: ""))
+        XCTAssertNil("".bruteForceIndex(of: "hello"))
+        
+        XCTAssertEqual("hello world".bruteForceIndex(of: ""), "hello world".startIndex)
+        XCTAssertEqual("hello world".bruteForceIndex(of: "he"), "hello world".startIndex)
+        XCTAssertEqual("hello world".bruteForceIndex(of: "hello world"), "hello world".startIndex)
+        
+        XCTAssertEqual("hello world".bruteForceIndex(of: " "), "hello world".index("hello world".startIndex, offsetBy: 5))
+        XCTAssertEqual("hello world".bruteForceIndex(of: "rld"), "hello world".index("hello world".startIndex, offsetBy: 8))
+        
+        XCTAssertNil("hello world".bruteForceIndex(of: "ow"))
+        XCTAssertNil("hello world".bruteForceIndex(of: "foo hello world bar"))
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testBoyerMoore() {
+        XCTAssertNil("".boyerMooreIndex(of: ""))
+        XCTAssertNil("".boyerMooreIndex(of: "hello"))
+        
+        XCTAssertEqual("hello world".boyerMooreIndex(of: ""), "hello world".startIndex)
+        XCTAssertEqual("hello world".boyerMooreIndex(of: "he"), "hello world".startIndex)
+        XCTAssertEqual("hello world".boyerMooreIndex(of: "hello world"), "hello world".startIndex)
+        
+        XCTAssertEqual("hello world".boyerMooreIndex(of: " "), "hello world".index("hello world".startIndex, offsetBy: 5))
+        XCTAssertEqual("hello world".boyerMooreIndex(of: "rld"), "hello world".index("hello world".startIndex, offsetBy: 8))
+        
+        XCTAssertNil("hello world".boyerMooreIndex(of: "ow"))
+        XCTAssertNil("hello world".boyerMooreIndex(of: "foo hello world bar"))
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
