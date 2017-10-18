@@ -64,7 +64,7 @@ extension String {
                 i = index(after: i)
             } else {
                 // 待匹配位置对应字符与pattern的最后一个字符不同
-                // 如果skipTable中存在待匹配位置对应字符，则后移对应的位置，对其lastChar与pattern中对应字符，否则后移整个pattern的长度
+                // 如果skipTable中存在待匹配位置对应字符，则后移对应的位置，对齐lastChar与pattern中对应字符，否则后移整个pattern的长度
                 // 如果直到endIndex都没有，则表示匹配失败
                 i = index(i, offsetBy: skipTable[c] ?? patternLength, limitedBy: endIndex) ?? endIndex
             }

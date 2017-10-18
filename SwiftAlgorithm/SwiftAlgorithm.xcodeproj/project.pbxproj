@@ -68,6 +68,7 @@
 		CCCCEBD11F83C04000043D58 /* Union-Find.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Union-Find.swift"; sourceTree = "<group>"; };
 		CCCCEBD31F8510B700043D58 /* Brute-Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brute-Force.swift"; sourceTree = "<group>"; };
 		CCCCEBD51F85133000043D58 /* StringSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSearchTests.swift; sourceTree = "<group>"; };
+		CCCCEBD91F86548600043D58 /* Knuth-Morris-Pratt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Knuth-Morris-Pratt.swift"; sourceTree = "<group>"; };
 		CCDA52A51F74A4F8003F5C92 /* AlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDA52A91F74A4F8003F5C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDA52AD1F74A511003F5C92 /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 			children = (
 				CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */,
 				CCCCEBD31F8510B700043D58 /* Brute-Force.swift */,
+				CCCCEBD91F86548600043D58 /* Knuth-Morris-Pratt.swift */,
 			);
 			name = "String Search";
 			sourceTree = "<group>";
