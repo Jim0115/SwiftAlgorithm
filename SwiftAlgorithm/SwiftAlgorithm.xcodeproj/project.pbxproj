@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC20DE961F97AFBE0057990E /* LongestCommonSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC20DE951F97AFBE0057990E /* LongestCommonSubsequence.swift */; };
 		CC28EB4D1F7F3F5B004463B3 /* KthLargest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC28EB4C1F7F3F5B004463B3 /* KthLargest.swift */; };
 		CC329CA91F7296AD00D45FC7 /* LinearSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */; };
 		CC329CAB1F72980300D45FC7 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAA1F72980300D45FC7 /* BinarySearch.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC20DE951F97AFBE0057990E /* LongestCommonSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestCommonSubsequence.swift; sourceTree = "<group>"; };
 		CC28EB4C1F7F3F5B004463B3 /* KthLargest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KthLargest.swift; sourceTree = "<group>"; };
 		CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearch.swift; sourceTree = "<group>"; };
 		CC329CAA1F72980300D45FC7 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */,
 				CCCCEBD31F8510B700043D58 /* Brute-Force.swift */,
 				CCCCEBD91F86548600043D58 /* Knuth-Morris-Pratt.swift */,
+				CC20DE951F97AFBE0057990E /* LongestCommonSubsequence.swift */,
 			);
 			name = "String Search";
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */,
 				CC28EB4D1F7F3F5B004463B3 /* KthLargest.swift in Sources */,
 				CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */,
+				CC20DE961F97AFBE0057990E /* LongestCommonSubsequence.swift in Sources */,
 				CCCCEBD41F8510B700043D58 /* Brute-Force.swift in Sources */,
 				CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */,
 				CC329CAD1F729CFA00D45FC7 /* CountOccurrences.swift in Sources */,

@@ -8,4 +8,4 @@
 
 import Foundation
 
-(0...5).forEach { _ in Sample.orderedSelect(from: [1, 2, 3, 4, 5], count: 2)/ }
+LongestCommonSubsequence.search("Hello World", with: "Hello World")/
