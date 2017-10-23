@@ -49,6 +49,19 @@ class SortTests: XCTestCase {
         XCTAssertEqual(SelectionSort.sort([2, 1, 3], isOrderedBy: >), [3, 2, 1])
         XCTAssertEqual(SelectionSort.sort(Array(1...100), isOrderedBy: <), Array(1...100))
         XCTAssertEqual(SelectionSort.sort(Array(1...100), isOrderedBy: >), Array(1...100).reversed())
+        
+        XCTAssertEqual(ShellSort.sort([Int](), isOrderedBy: >), [Int]())
+        XCTAssertEqual(ShellSort.sort([Int](), isOrderedBy: <), [Int]())
+        XCTAssertEqual(ShellSort.sort([1], isOrderedBy: >), [1])
+        XCTAssertEqual(ShellSort.sort([1], isOrderedBy: <), [1])
+        XCTAssertEqual(ShellSort.sort([1, 2], isOrderedBy: <), [1, 2])
+        XCTAssertEqual(ShellSort.sort([1, 2], isOrderedBy: >), [2, 1])
+        XCTAssertEqual(ShellSort.sort([1, 1, 2], isOrderedBy: <), [1, 1, 2])
+        XCTAssertEqual(ShellSort.sort([1, 1, 2], isOrderedBy: >), [2, 1, 1])
+        XCTAssertEqual(ShellSort.sort([2, 1, 3], isOrderedBy: <), [1, 2, 3])
+        XCTAssertEqual(ShellSort.sort([2, 1, 3], isOrderedBy: >), [3, 2, 1])
+        XCTAssertEqual(ShellSort.sort(Array(1...100), isOrderedBy: <), Array(1...100))
+        XCTAssertEqual(ShellSort.sort(Array(1...100), isOrderedBy: >), Array(1...100).reversed())
     }
 
     func testInsertionPerformance() {
