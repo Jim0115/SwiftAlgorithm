@@ -33,6 +33,7 @@
 		CCCCEBD61F85133000043D58 /* StringSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBD51F85133000043D58 /* StringSearchTests.swift */; };
 		CCCCEBD71F85141800043D58 /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
 		CCCCEBD81F85141B00043D58 /* Brute-Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBD31F8510B700043D58 /* Brute-Force.swift */; };
+		CCD16AF31F9E488D009D1F37 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD16AF21F9E488D009D1F37 /* QuickSort.swift */; };
 		CCDA52AE1F74A511003F5C92 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA52AD1F74A511003F5C92 /* SearchTests.swift */; };
 		CCDA52AF1F74A566003F5C92 /* LinearSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */; };
 		CCDA52B01F74A568003F5C92 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAA1F72980300D45FC7 /* BinarySearch.swift */; };
@@ -77,6 +78,7 @@
 		CCCCEBD31F8510B700043D58 /* Brute-Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brute-Force.swift"; sourceTree = "<group>"; };
 		CCCCEBD51F85133000043D58 /* StringSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSearchTests.swift; sourceTree = "<group>"; };
 		CCCCEBD91F86548600043D58 /* Knuth-Morris-Pratt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Knuth-Morris-Pratt.swift"; sourceTree = "<group>"; };
+		CCD16AF21F9E488D009D1F37 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		CCDA52A51F74A4F8003F5C92 /* AlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDA52A91F74A4F8003F5C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDA52AD1F74A511003F5C92 /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
@@ -115,8 +117,8 @@
 		CC3CA2161EECFFA900FED945 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				CCD16AF11F9E4863009D1F37 /* Fast Sort */,
 				CC20DE971F9C97190057990E /* Basic Sort */,
-				CCDC74C01F6FE89D003BACE0 /* MergeSort.swift */,
 			);
 			name = Sort;
 			sourceTree = "<group>";
@@ -193,6 +195,15 @@
 				CCA3EB6E1EE438F600A40151 /* Queue.swift */,
 			);
 			name = DataStructure;
+			sourceTree = "<group>";
+		};
+		CCD16AF11F9E4863009D1F37 /* Fast Sort */ = {
+			isa = PBXGroup;
+			children = (
+				CCDC74C01F6FE89D003BACE0 /* MergeSort.swift */,
+				CCD16AF21F9E488D009D1F37 /* QuickSort.swift */,
+			);
+			name = "Fast Sort";
 			sourceTree = "<group>";
 		};
 		CCDA52A61F74A4F8003F5C92 /* AlgorithmTests */ = {
@@ -310,6 +321,7 @@
 				CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */,
 				CC28EB4D1F7F3F5B004463B3 /* KthLargest.swift in Sources */,
 				CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */,
+				CCD16AF31F9E488D009D1F37 /* QuickSort.swift in Sources */,
 				CC20DE961F97AFBE0057990E /* LongestCommonSubsequence.swift in Sources */,
 				CCCCEBD41F8510B700043D58 /* Brute-Force.swift in Sources */,
 				CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */,
