@@ -25,7 +25,7 @@ struct QuickSort {
         
         // 此方法在寻找数组中第k大元素时也使用过
         // 可能存在的一个问题是，如果数组中存在多个与pivot相同的值，不能保证这些值最后都集中在pivot的附近
-        @discardableResult func partitionLomuto<T: Comparable>(_ a: inout [T], low: Int, high: Int) -> Int {
+        func partitionLomuto<T: Comparable>(_ a: inout [T], low: Int, high: Int) -> Int {
             let pivot = a[high]
             
             var i = low
@@ -45,6 +45,31 @@ struct QuickSort {
             let p = partitionLomuto(&array, low: low, high: high)
             sortLomuto(&array, low: low, high: p - 1)
             sortLomuto(&array, low: p + 1, high: high)
+        }
+    }
+    
+    static func sortHoare<T: Comparable>(_ array: inout [T], low: Int, high: Int) {
+        func partitionHoare<T: Comparable>(_ a: inout [T], low: Int, high: Int) -> Int {
+            let pivot = a[low]
+            var i = low - 1
+            var j = high + 1
+            
+            while true {
+                repeat { i += 1 } while a[i] < pivot
+                repeat { j -= 1 } while a[j] > pivot
+                
+                if i < j {
+                    a.swapAt(i, j)
+                } else {
+                    return j
+                }
+            }
+        }
+        
+        if low < high {
+            let p = partitionHoare(&array, low: low, high: high)
+            sortHoare(&array, low: low, high: p)
+            sortHoare(&array, low: p + 1, high: high)
         }
     }
 }
