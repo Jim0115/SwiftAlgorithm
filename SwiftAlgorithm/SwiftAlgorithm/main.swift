@@ -14,6 +14,6 @@ import Foundation
 
 var list = [ 10, 0, 3, 9, 2, 14, 26, 27, 1, 5, 8, -1, 8, -2 ]
 //var list = [4, 2, 3, 1]
-QuickSort.sortHoare(&list, low: 0, high: list.count - 1)
+QuickSort.sortDutchFlag(&list, low: 0, high: list.count - 1)
 
 list/

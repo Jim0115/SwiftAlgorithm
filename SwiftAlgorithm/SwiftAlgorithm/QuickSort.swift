@@ -72,4 +72,38 @@ struct QuickSort {
             sortHoare(&array, low: p + 1, high: high)
         }
     }
+    
+    static func sortDutchFlag<T: Comparable>(_ array: inout [T], low: Int, high: Int) {
+        
+        // 为了解决与pivot相等的值并不全部集中在数组中部的问题，引入一个新的flag用于纪录与pivit相等值的位置
+        func partitionDutchFlag<T: Comparable>(_ a: inout [T], low: Int, high: Int, pivotIndex: Int) -> (Int, Int) {
+            let pivot = a[pivotIndex]
+            
+            var smaller = low
+            var equal = low
+            var larger = high
+            
+            while equal <= larger {
+                if a[equal] < pivot {
+                    a.swapAt(equal, smaller)
+                    smaller += 1
+                    equal += 1
+                } else if a[equal] == pivot {
+                    equal += 1
+                } else {
+                    a.swapAt(equal, larger)
+                    larger -= 1
+                }
+            }
+            
+            return (smaller, larger)
+        }
+        
+        if low < high {
+            let pivotIndex = Int(arc4random()) % (high - low) + low
+            let (p, q) = partitionDutchFlag(&array, low: low, high: high, pivotIndex: pivotIndex)
+            sortDutchFlag(&array, low: low, high: p - 1)
+            sortDutchFlag(&array, low: q + 1, high: high)
+        }
+    }
 }
