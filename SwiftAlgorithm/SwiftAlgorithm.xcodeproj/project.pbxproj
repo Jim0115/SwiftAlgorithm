@@ -18,6 +18,7 @@
 		CC329CAD1F729CFA00D45FC7 /* CountOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAC1F729CFA00D45FC7 /* CountOccurrences.swift */; };
 		CC329CAF1F72A39900D45FC7 /* MinimumMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAE1F72A39900D45FC7 /* MinimumMaximum.swift */; };
 		CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CA2171EECFFC300FED945 /* InsertionSort.swift */; };
+		CC46B4311FA74B01005C4AE9 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46B4301FA74B01005C4AE9 /* Heap.swift */; };
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
 		CC933FB31F7AA964000C3D7A /* StackAndQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */; };
@@ -65,6 +66,7 @@
 		CC329CAC1F729CFA00D45FC7 /* CountOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOccurrences.swift; sourceTree = "<group>"; };
 		CC329CAE1F72A39900D45FC7 /* MinimumMaximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumMaximum.swift; sourceTree = "<group>"; };
 		CC3CA2171EECFFC300FED945 /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		CC46B4301FA74B01005C4AE9 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
 		CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAndQueueTests.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */,
 				CCA3EB6E1EE438F600A40151 /* Queue.swift */,
+				CC46B4301FA74B01005C4AE9 /* Heap.swift */,
 			);
 			name = DataStructure;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */,
 				CC329CA91F7296AD00D45FC7 /* LinearSearch.swift in Sources */,
 				CC329CAB1F72980300D45FC7 /* BinarySearch.swift in Sources */,
+				CC46B4311FA74B01005C4AE9 /* Heap.swift in Sources */,
 				CCCCEBD21F83C04000043D58 /* Union-Find.swift in Sources */,
 				CCCCEBD01F83247400043D58 /* Sample.swift in Sources */,
 				CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */,

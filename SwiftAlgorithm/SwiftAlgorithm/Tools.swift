@@ -10,6 +10,7 @@ import Foundation
 
 postfix operator /
 
-postfix func /<T> (element: T) {
+@discardableResult postfix func /<T> (element: T) -> T {
     print("\(element) --- Type: \(T.self)")
+    return element
 }
