@@ -20,6 +20,9 @@ public struct Heap<T> {
         buildHeap(from: array)
     }
     
+    // buildHeap 方法有两种实现方式
+    // 第一种方法 对数组的每个元素调用一次 insert 方法，每次为 O(log n) 整体为 O(n log n)
+    // 第二种 从数组 1/2 位置开始，对之前的元素依次调用 shift down 方法 复杂度为 O(n)
     private mutating func buildHeap(from array: [T]) {
         elements = array
         for i in stride(from: elements.count / 2 - 1, through: 0, by: -1) {
@@ -92,6 +95,10 @@ public struct Heap<T> {
         return value
     }
     
+    // 对于一个节点的 shift up 操作判断其与父节点是否符合堆的规则
+    // 若不满足规则，交换两节点，继续判断新节点与其父节点
+    // 直到找到根节点或满足规则条件的节点
+    // 此时整个堆的所有节点即满足规则
     mutating func shiftUp(at index: Int) {
         var childIndex = index
         let child = elements[childIndex]
@@ -106,6 +113,9 @@ public struct Heap<T> {
         elements[childIndex] = child
     }
     
+    // 类似于 shift up 操作，shift down 操作会判断一个节点与其子节点之间是否符合规则
+    // 交换不满足规则的两节点并重复此操作
+    // 直到找到所有符合规则的节点或叶子节点
     mutating func shiftDown(at index: Int, heapSize: Int) {
         var parentIndex = index
         
