@@ -72,6 +72,9 @@ public struct Heap<T> {
         shiftUp(at: index)
     }
     
+    // 删除堆顶操作
+    // 当堆中节点多于一个时，将堆顶和堆底互换
+    // 删除新的堆底元素，然后做一次 shift down 操作
     @discardableResult public mutating func remove() -> T? {
         if count <= 1 {
             return elements.popLast()
@@ -83,6 +86,9 @@ public struct Heap<T> {
         }
     }
     
+    // 删除指定位置元素
+    // 将指定元素交换到堆底并移除
+    // 做一次 shift up 和一次 shift down 操作
     public mutating func remove(at index: Int) -> T? {
         guard index < count else { return nil }
         
