@@ -10,58 +10,27 @@ import XCTest
 
 class SortTests: XCTestCase {
 
-    func testSort() {
-        XCTAssertEqual(InsertionSort.sort([Int](), isOrderedBy: >), [Int]())
-        XCTAssertEqual(InsertionSort.sort([Int](), isOrderedBy: <), [Int]())
-        XCTAssertEqual(InsertionSort.sort([1], isOrderedBy: >), [1])
-        XCTAssertEqual(InsertionSort.sort([1], isOrderedBy: <), [1])
-        XCTAssertEqual(InsertionSort.sort([1, 2], isOrderedBy: <), [1, 2])
-        XCTAssertEqual(InsertionSort.sort([1, 2], isOrderedBy: >), [2, 1])
-        XCTAssertEqual(InsertionSort.sort([1, 1, 2], isOrderedBy: <), [1, 1, 2])
-        XCTAssertEqual(InsertionSort.sort([1, 1, 2], isOrderedBy: >), [2, 1, 1])
-        XCTAssertEqual(InsertionSort.sort([2, 1, 3], isOrderedBy: <), [1, 2, 3])
-        XCTAssertEqual(InsertionSort.sort([2, 1, 3], isOrderedBy: >), [3, 2, 1])
-        XCTAssertEqual(InsertionSort.sort(Array(1...100), isOrderedBy: <), Array(1...100))
-        XCTAssertEqual(InsertionSort.sort(Array(1...100), isOrderedBy: >), Array(1...100).reversed())
+    func testSort() {        
+        sortDispatcher(sortFunction: InsertionSort.sort)
+        sortDispatcher(sortFunction: MergeSort.sort)
+        sortDispatcher(sortFunction: SelectionSort.sort)
+        sortDispatcher(sortFunction: ShellSort.sort)
+    }
+    
+    func sortDispatcher(sortFunction: ([Int], @escaping (Int, Int) -> Bool) -> [Int]) {
+        XCTAssertEqual(sortFunction([Int](), >), [Int]())
+        XCTAssertEqual(sortFunction([Int](), <), [Int]())
+        XCTAssertEqual(sortFunction([1], >), [1])
+        XCTAssertEqual(sortFunction([1], <), [1])
+        XCTAssertEqual(sortFunction([1, 2], <), [1, 2])
+        XCTAssertEqual(sortFunction([1, 2], >), [2, 1])
+        XCTAssertEqual(sortFunction([1, 1, 2], <), [1, 1, 2])
+        XCTAssertEqual(sortFunction([1, 1, 2], >), [2, 1, 1])
+        XCTAssertEqual(sortFunction([2, 1, 3], <), [1, 2, 3])
+        XCTAssertEqual(sortFunction([2, 1, 3], >), [3, 2, 1])
+        XCTAssertEqual(sortFunction(Array(1...100), <), Array(1...100))
+        XCTAssertEqual(sortFunction(Array(1...100), >), Array(1...100).reversed())
         
-        XCTAssertEqual(MergeSort.sort([Int](), isOrderedBy: >), [Int]())
-        XCTAssertEqual(MergeSort.sort([Int](), isOrderedBy: <), [Int]())
-        XCTAssertEqual(MergeSort.sort([1], isOrderedBy: >), [1])
-        XCTAssertEqual(MergeSort.sort([1], isOrderedBy: <), [1])
-        XCTAssertEqual(MergeSort.sort([1, 2], isOrderedBy: <), [1, 2])
-        XCTAssertEqual(MergeSort.sort([1, 2], isOrderedBy: >), [2, 1])
-        XCTAssertEqual(MergeSort.sort([1, 1, 2], isOrderedBy: <), [1, 1, 2])
-        XCTAssertEqual(MergeSort.sort([1, 1, 2], isOrderedBy: >), [2, 1, 1])
-        XCTAssertEqual(MergeSort.sort([2, 1, 3], isOrderedBy: <), [1, 2, 3])
-        XCTAssertEqual(MergeSort.sort([2, 1, 3], isOrderedBy: >), [3, 2, 1])
-        XCTAssertEqual(MergeSort.sort(Array(1...10000), isOrderedBy: <), Array(1...10000))
-        XCTAssertEqual(MergeSort.sort(Array(1...10000), isOrderedBy: >), Array(1...10000).reversed())
-        
-        XCTAssertEqual(SelectionSort.sort([Int](), isOrderedBy: >), [Int]())
-        XCTAssertEqual(SelectionSort.sort([Int](), isOrderedBy: <), [Int]())
-        XCTAssertEqual(SelectionSort.sort([1], isOrderedBy: >), [1])
-        XCTAssertEqual(SelectionSort.sort([1], isOrderedBy: <), [1])
-        XCTAssertEqual(SelectionSort.sort([1, 2], isOrderedBy: <), [1, 2])
-        XCTAssertEqual(SelectionSort.sort([1, 2], isOrderedBy: >), [2, 1])
-        XCTAssertEqual(SelectionSort.sort([1, 1, 2], isOrderedBy: <), [1, 1, 2])
-        XCTAssertEqual(SelectionSort.sort([1, 1, 2], isOrderedBy: >), [2, 1, 1])
-        XCTAssertEqual(SelectionSort.sort([2, 1, 3], isOrderedBy: <), [1, 2, 3])
-        XCTAssertEqual(SelectionSort.sort([2, 1, 3], isOrderedBy: >), [3, 2, 1])
-        XCTAssertEqual(SelectionSort.sort(Array(1...100), isOrderedBy: <), Array(1...100))
-        XCTAssertEqual(SelectionSort.sort(Array(1...100), isOrderedBy: >), Array(1...100).reversed())
-        
-        XCTAssertEqual(ShellSort.sort([Int](), isOrderedBy: >), [Int]())
-        XCTAssertEqual(ShellSort.sort([Int](), isOrderedBy: <), [Int]())
-        XCTAssertEqual(ShellSort.sort([1], isOrderedBy: >), [1])
-        XCTAssertEqual(ShellSort.sort([1], isOrderedBy: <), [1])
-        XCTAssertEqual(ShellSort.sort([1, 2], isOrderedBy: <), [1, 2])
-        XCTAssertEqual(ShellSort.sort([1, 2], isOrderedBy: >), [2, 1])
-        XCTAssertEqual(ShellSort.sort([1, 1, 2], isOrderedBy: <), [1, 1, 2])
-        XCTAssertEqual(ShellSort.sort([1, 1, 2], isOrderedBy: >), [2, 1, 1])
-        XCTAssertEqual(ShellSort.sort([2, 1, 3], isOrderedBy: <), [1, 2, 3])
-        XCTAssertEqual(ShellSort.sort([2, 1, 3], isOrderedBy: >), [3, 2, 1])
-        XCTAssertEqual(ShellSort.sort(Array(1...100), isOrderedBy: <), Array(1...100))
-        XCTAssertEqual(ShellSort.sort(Array(1...100), isOrderedBy: >), Array(1...100).reversed())
     }
 
     func testInsertionPerformance() {
