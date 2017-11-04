@@ -15,6 +15,7 @@ class SortTests: XCTestCase {
         sortDispatcher(sortFunction: MergeSort.sort)
         sortDispatcher(sortFunction: SelectionSort.sort)
         sortDispatcher(sortFunction: ShellSort.sort)
+        sortDispatcher(sortFunction: HeapSort.sort)
     }
     
     func sortDispatcher(sortFunction: ([Int], @escaping (Int, Int) -> Bool) -> [Int]) {

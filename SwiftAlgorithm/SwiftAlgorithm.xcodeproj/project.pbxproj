@@ -22,6 +22,8 @@
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
 		CC8DC5AE1FADEE7800D36E3B /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */; };
+		CC8DC5AF1FADF5E100D36E3B /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */; };
+		CC8DC5B11FADF60100D36E3B /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46B4301FA74B01005C4AE9 /* Heap.swift */; };
 		CC933FB31F7AA964000C3D7A /* StackAndQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */; };
 		CC933FB41F7AA978000C3D7A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */; };
 		CC933FB51F7AA978000C3D7A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6E1EE438F600A40151 /* Queue.swift */; };
@@ -348,7 +350,9 @@
 				CCCCEBD61F85133000043D58 /* StringSearchTests.swift in Sources */,
 				CCDA52B41F74A671003F5C92 /* MergeSort.swift in Sources */,
 				CC20DE9A1F9C9A880057990E /* SelectionSort.swift in Sources */,
+				CC8DC5B11FADF60100D36E3B /* Heap.swift in Sources */,
 				CCDA52B01F74A568003F5C92 /* BinarySearch.swift in Sources */,
+				CC8DC5AF1FADF5E100D36E3B /* HeapSort.swift in Sources */,
 				CC20DE9D1F9CCE990057990E /* ShellSort.swift in Sources */,
 				CCDA52B31F74A66F003F5C92 /* InsertionSort.swift in Sources */,
 				CCDA52B21F74A66A003F5C92 /* SortTests.swift in Sources */,
