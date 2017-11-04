@@ -8,8 +8,4 @@
 
 import Foundation
 
-var h = Heap<Int>.init(array: [2, 3, 4, 1, 6], sort: <)/
-
-while !h.isEmpty {
-    h.remove()!/
-}
+HeapSort.sort([1, 5, 4, 2, 3, 1], isOrderedBy: >)/
