@@ -24,6 +24,7 @@
 		CC8DC5AE1FADEE7800D36E3B /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */; };
 		CC8DC5AF1FADF5E100D36E3B /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */; };
 		CC8DC5B11FADF60100D36E3B /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46B4301FA74B01005C4AE9 /* Heap.swift */; };
+		CC8DC5B41FADFC0B00D36E3B /* CountingSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5B31FADFC0B00D36E3B /* CountingSort.swift */; };
 		CC933FB31F7AA964000C3D7A /* StackAndQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */; };
 		CC933FB41F7AA978000C3D7A /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6A1EE2ACEA00A40151 /* Stack.swift */; };
 		CC933FB51F7AA978000C3D7A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3EB6E1EE438F600A40151 /* Queue.swift */; };
@@ -73,6 +74,7 @@
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
 		CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
+		CC8DC5B31FADFC0B00D36E3B /* CountingSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingSort.swift; sourceTree = "<group>"; };
 		CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAndQueueTests.swift; sourceTree = "<group>"; };
 		CCA3EB5F1EE2AC3600A40151 /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA3EB621EE2AC3600A40151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		CC3CA2161EECFFA900FED945 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				CC8DC5B21FADFBEA00D36E3B /* Special Sort */,
 				CCD16AF11F9E4863009D1F37 /* Fast Sort */,
 				CC20DE971F9C97190057990E /* Basic Sort */,
 			);
@@ -161,6 +164,14 @@
 				CC20DE951F97AFBE0057990E /* LongestCommonSubsequence.swift */,
 			);
 			name = "String Search";
+			sourceTree = "<group>";
+		};
+		CC8DC5B21FADFBEA00D36E3B /* Special Sort */ = {
+			isa = PBXGroup;
+			children = (
+				CC8DC5B31FADFC0B00D36E3B /* CountingSort.swift */,
+			);
+			name = "Special Sort";
 			sourceTree = "<group>";
 		};
 		CCA3EB561EE2AC3600A40151 = {
@@ -323,6 +334,7 @@
 				CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */,
 				CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */,
 				CC329CA91F7296AD00D45FC7 /* LinearSearch.swift in Sources */,
+				CC8DC5B41FADFC0B00D36E3B /* CountingSort.swift in Sources */,
 				CC329CAB1F72980300D45FC7 /* BinarySearch.swift in Sources */,
 				CC46B4311FA74B01005C4AE9 /* Heap.swift in Sources */,
 				CC8DC5AE1FADEE7800D36E3B /* HeapSort.swift in Sources */,
