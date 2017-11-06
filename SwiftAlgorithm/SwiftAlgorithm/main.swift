@@ -8,4 +8,6 @@
 
 import Foundation
 
-CountingSort.sort([1, 2, 3, 3, 0, 0, 3, 2, 1, 1, 3, 2, 1, 3, 2, 4])/
+var a = Array<Int>(0...125)
+RadixSort.sort(&a)
+
