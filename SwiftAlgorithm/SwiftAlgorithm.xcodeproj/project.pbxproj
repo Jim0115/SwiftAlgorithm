@@ -39,6 +39,7 @@
 		CCCCEBD61F85133000043D58 /* StringSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBD51F85133000043D58 /* StringSearchTests.swift */; };
 		CCCCEBD71F85141800043D58 /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
 		CCCCEBD81F85141B00043D58 /* Brute-Force.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCCEBD31F8510B700043D58 /* Brute-Force.swift */; };
+		CCCF78ED1FB1DF8800022B60 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF78EC1FB1DF8800022B60 /* BubbleSort.swift */; };
 		CCD16AF31F9E488D009D1F37 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD16AF21F9E488D009D1F37 /* QuickSort.swift */; };
 		CCDA52AE1F74A511003F5C92 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA52AD1F74A511003F5C92 /* SearchTests.swift */; };
 		CCDA52AF1F74A566003F5C92 /* LinearSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CA81F7296AD00D45FC7 /* LinearSearch.swift */; };
@@ -88,6 +89,7 @@
 		CCCCEBD31F8510B700043D58 /* Brute-Force.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brute-Force.swift"; sourceTree = "<group>"; };
 		CCCCEBD51F85133000043D58 /* StringSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSearchTests.swift; sourceTree = "<group>"; };
 		CCCCEBD91F86548600043D58 /* Knuth-Morris-Pratt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Knuth-Morris-Pratt.swift"; sourceTree = "<group>"; };
+		CCCF78EC1FB1DF8800022B60 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		CCD16AF21F9E488D009D1F37 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		CCDA52A51F74A4F8003F5C92 /* AlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDA52A91F74A4F8003F5C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		CC3CA2161EECFFA900FED945 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
+				CCCF78EB1FB1DF7700022B60 /* Slow Sort */,
 				CC8DC5B21FADFBEA00D36E3B /* Special Sort */,
 				CCD16AF11F9E4863009D1F37 /* Fast Sort */,
 				CC20DE971F9C97190057990E /* Basic Sort */,
@@ -216,6 +219,14 @@
 				CC46B4301FA74B01005C4AE9 /* Heap.swift */,
 			);
 			name = DataStructure;
+			sourceTree = "<group>";
+		};
+		CCCF78EB1FB1DF7700022B60 /* Slow Sort */ = {
+			isa = PBXGroup;
+			children = (
+				CCCF78EC1FB1DF8800022B60 /* BubbleSort.swift */,
+			);
+			name = "Slow Sort";
 			sourceTree = "<group>";
 		};
 		CCD16AF11F9E4863009D1F37 /* Fast Sort */ = {
@@ -334,6 +345,7 @@
 			files = (
 				CC20DE9C1F9CAA600057990E /* ShellSort.swift in Sources */,
 				CCA3EB6D1EE2B07F00A40151 /* Tools.swift in Sources */,
+				CCCF78ED1FB1DF8800022B60 /* BubbleSort.swift in Sources */,
 				CC79B4461FB0956D00D7563F /* RadixSort.swift in Sources */,
 				CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */,
 				CCA3EB6B1EE2ACEA00A40151 /* Stack.swift in Sources */,
