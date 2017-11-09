@@ -8,6 +8,6 @@
 
 import Foundation
 
-var a = Array<Int>()
-BubbleSort.sort(&a)
+var a = Array([Int](0...10).reversed())
+SlowSort.sort(&a)
 a/
