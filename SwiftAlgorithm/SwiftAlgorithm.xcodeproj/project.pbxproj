@@ -18,6 +18,7 @@
 		CC329CAD1F729CFA00D45FC7 /* CountOccurrences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAC1F729CFA00D45FC7 /* CountOccurrences.swift */; };
 		CC329CAF1F72A39900D45FC7 /* MinimumMaximum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC329CAE1F72A39900D45FC7 /* MinimumMaximum.swift */; };
 		CC3CA2181EECFFC300FED945 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CA2171EECFFC300FED945 /* InsertionSort.swift */; };
+		CC40D2E71FCAB7DE001687D9 /* Run-LengthEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40D2E61FCAB7DE001687D9 /* Run-LengthEncoding.swift */; };
 		CC46B4311FA74B01005C4AE9 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46B4301FA74B01005C4AE9 /* Heap.swift */; };
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
@@ -73,6 +74,7 @@
 		CC329CAC1F729CFA00D45FC7 /* CountOccurrences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOccurrences.swift; sourceTree = "<group>"; };
 		CC329CAE1F72A39900D45FC7 /* MinimumMaximum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumMaximum.swift; sourceTree = "<group>"; };
 		CC3CA2171EECFFC300FED945 /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		CC40D2E61FCAB7DE001687D9 /* Run-LengthEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Run-LengthEncoding.swift"; sourceTree = "<group>"; };
 		CC46B4301FA74B01005C4AE9 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 			name = Sort;
 			sourceTree = "<group>";
 		};
+		CC40D2E41FCAB7B5001687D9 /* Compression */ = {
+			isa = PBXGroup;
+			children = (
+				CC40D2E61FCAB7DE001687D9 /* Run-LengthEncoding.swift */,
+			);
+			name = Compression;
+			sourceTree = "<group>";
+		};
 		CC5091AF1F2454BA005E7622 /* Recursion */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +213,7 @@
 		CCA3EB611EE2AC3600A40151 /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				CC40D2E41FCAB7B5001687D9 /* Compression */,
 				CC53C3881F7135DF0000B30C /* Search */,
 				CC5091AF1F2454BA005E7622 /* Recursion */,
 				CC3CA2161EECFFA900FED945 /* Sort */,
@@ -371,6 +382,7 @@
 				CC329CAF1F72A39900D45FC7 /* MinimumMaximum.swift in Sources */,
 				CCA3EB631EE2AC3600A40151 /* main.swift in Sources */,
 				CC20DE991F9C974F0057990E /* SelectionSort.swift in Sources */,
+				CC40D2E71FCAB7DE001687D9 /* Run-LengthEncoding.swift in Sources */,
 				CCA3EB6F1EE438F600A40151 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
