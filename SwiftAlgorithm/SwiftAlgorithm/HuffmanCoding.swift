@@ -56,3 +56,43 @@ public class BitReader {
         return bit == 0 ? false : true
     }
 }
+
+class Huffman {
+    typealias NodeIndex = Int
+    
+    struct Node {
+        var count = 0
+        var index: NodeIndex = -1
+        var parent: NodeIndex = -1
+        var left: NodeIndex = -1
+        var right: NodeIndex = -1
+    }
+    
+    var tree = [Node](repeating: Node(), count: 256)
+    
+    var root: NodeIndex = -1
+    
+    fileprivate func countByteFrequence(inData data: Data) {
+        for value in data {
+            let index = Int(value)
+            tree[index].count += 1
+            tree[index].index = index
+        }
+    }
+    
+    struct Freq {
+        var byte: UInt8 = 0
+        var count = 0
+    }
+    
+    func frequencyTable() -> [Freq] {
+        var a = [Freq]()
+        a.reserveCapacity(256)
+        
+        for i in 0..<256 where tree[i].count > 0 {
+            a.append(Freq(byte: UInt8(i), count: tree[i].count))
+        }
+        return a
+    }
+}
+
