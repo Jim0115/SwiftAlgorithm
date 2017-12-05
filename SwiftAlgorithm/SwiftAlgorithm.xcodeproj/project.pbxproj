@@ -49,6 +49,7 @@
 		CCDA52B21F74A66A003F5C92 /* SortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA52B11F74A66A003F5C92 /* SortTests.swift */; };
 		CCDA52B31F74A66F003F5C92 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3CA2171EECFFC300FED945 /* InsertionSort.swift */; };
 		CCDA52B41F74A671003F5C92 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC74C01F6FE89D003BACE0 /* MergeSort.swift */; };
+		CCDABC8E1FD6616100FD426B /* HuffmanCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDABC8D1FD6616100FD426B /* HuffmanCoding.swift */; };
 		CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC74C01F6FE89D003BACE0 /* MergeSort.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		CCDA52A91F74A4F8003F5C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCDA52AD1F74A511003F5C92 /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
 		CCDA52B11F74A66A003F5C92 /* SortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTests.swift; sourceTree = "<group>"; };
+		CCDABC8D1FD6616100FD426B /* HuffmanCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuffmanCoding.swift; sourceTree = "<group>"; };
 		CCDC74C01F6FE89D003BACE0 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				CC40D2E61FCAB7DE001687D9 /* Run-LengthEncoding.swift */,
+				CCDABC8D1FD6616100FD426B /* HuffmanCoding.swift */,
 			);
 			name = Compression;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */,
 				CC329CAD1F729CFA00D45FC7 /* CountOccurrences.swift in Sources */,
 				CC329CAF1F72A39900D45FC7 /* MinimumMaximum.swift in Sources */,
+				CCDABC8E1FD6616100FD426B /* HuffmanCoding.swift in Sources */,
 				CCA3EB631EE2AC3600A40151 /* main.swift in Sources */,
 				CC20DE991F9C974F0057990E /* SelectionSort.swift in Sources */,
 				CC40D2E71FCAB7DE001687D9 /* Run-LengthEncoding.swift in Sources */,
