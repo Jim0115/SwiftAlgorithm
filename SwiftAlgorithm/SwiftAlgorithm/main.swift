@@ -8,16 +8,29 @@
 
 import Foundation
 
-var data = "aaabbbcccdddf".data(using: .ascii)!
+var data =
+    """
+The extra 0-bit at the end is there to make a full number of bytes. We were able to compress the original 34 bytes into merely 16 bytes, a space savings of over 50%!
 
-(data as NSData)/
-(data.compressRLE() as NSData)/
+To be able to decode these bits, we need to have the original frequency table. That table needs to be transmitted or saved along with the compressed data. Otherwise, the decoder does not know how to interpret the bits. Because of the overhead of this frequency table (about 1 kilobyte), it is not beneficial to use Huffman encoding on small inputs.
+"""/.data(using: .ascii)!
 
-//if let data = try? Data.init(contentsOf: URL(string: "http://che.org.il/wp-content/uploads/2016/12/pdf-sample.pdf")!, options: []) {
-    print(data.count)
-    print(data.compressRLE().count)
-    print(data.compressRLE().compressRLE().count)
-    print(data.compressRLE().compressRLE().compressRLE().count)
-    print(data == data.compressRLE().decompressRLE())
-//}
+"origin: "/
+(data as NSData)/.length/
+"RLE: "/
+(data.compressRLE() as NSData)/.length/
 
+let huffman = Huffman()
+let newData = huffman.compress(data: data)
+
+"Huffman encoded: "/
+(newData as NSData)/.length/
+
+let h = Huffman()
+let oldData = h.decompress(data: newData, frequencyTable: huffman.frequencyTable)
+
+"Huffman decoded: "/
+(oldData as NSData)/.length/
+
+"result: "/
+String.init(data: oldData, encoding: .utf8)/
