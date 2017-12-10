@@ -8,29 +8,27 @@
 
 import Foundation
 
-var data =
-    """
-The extra 0-bit at the end is there to make a full number of bytes. We were able to compress the original 34 bytes into merely 16 bytes, a space savings of over 50%!
+let a = [Int](0...7)
 
-To be able to decode these bits, we need to have the original frequency table. That table needs to be transmitted or saved along with the compressed data. Otherwise, the decoder does not know how to interpret the bits. Because of the overhead of this frequency table (about 1 kilobyte), it is not beneficial to use Huffman encoding on small inputs.
-"""/.data(using: .ascii)!
+extension Array where Element: Comparable {
+    var isSorted: Bool {
+        for i in 0..<count - 1 {
+            if self[i] > self[i + 1] {
+                return false
+            }
+        }
+        return true
+    }
+}
 
-"origin: "/
-(data as NSData)/.length/
-"RLE: "/
-(data.compressRLE() as NSData)/.length/
+var array = a + [9, 8]
+var count = 0
+Date()/
+while !array.isSorted {
+    array.fisherYatesShuffle()
+    count += 1
+}
 
-let huffman = Huffman()
-let newData = huffman.compress(data: data)
+count/
+Date()/
 
-"Huffman encoded: "/
-(newData as NSData)/.length/
-
-let h = Huffman()
-let oldData = h.decompress(data: newData, frequencyTable: huffman.frequencyTable)
-
-"Huffman decoded: "/
-(oldData as NSData)/.length/
-
-"result: "/
-String.init(data: oldData, encoding: .utf8)/

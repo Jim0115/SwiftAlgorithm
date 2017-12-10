@@ -23,6 +23,7 @@
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
 		CC79B4461FB0956D00D7563F /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79B4451FB0956D00D7563F /* RadixSort.swift */; };
+		CC7CDFE51FDD140500A2BA36 /* Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7CDFE41FDD140500A2BA36 /* Shuffle.swift */; };
 		CC8DC5AE1FADEE7800D36E3B /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */; };
 		CC8DC5AF1FADF5E100D36E3B /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */; };
 		CC8DC5B11FADF60100D36E3B /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC46B4301FA74B01005C4AE9 /* Heap.swift */; };
@@ -80,6 +81,7 @@
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
 		CC79B4451FB0956D00D7563F /* RadixSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadixSort.swift; sourceTree = "<group>"; };
+		CC7CDFE41FDD140500A2BA36 /* Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuffle.swift; sourceTree = "<group>"; };
 		CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		CC8DC5B31FADFC0B00D36E3B /* CountingSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingSort.swift; sourceTree = "<group>"; };
 		CC933FB21F7AA964000C3D7A /* StackAndQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackAndQueueTests.swift; sourceTree = "<group>"; };
@@ -186,6 +188,14 @@
 			name = "String Search";
 			sourceTree = "<group>";
 		};
+		CC7CDFE31FDD13F200A2BA36 /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				CC7CDFE41FDD140500A2BA36 /* Shuffle.swift */,
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
 		CC8DC5B21FADFBEA00D36E3B /* Special Sort */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +226,7 @@
 		CCA3EB611EE2AC3600A40151 /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				CC7CDFE31FDD13F200A2BA36 /* Miscellaneous */,
 				CC40D2E41FCAB7B5001687D9 /* Compression */,
 				CC53C3881F7135DF0000B30C /* Search */,
 				CC5091AF1F2454BA005E7622 /* Recursion */,
@@ -376,6 +387,7 @@
 				CCCCEBD01F83247400043D58 /* Sample.swift in Sources */,
 				CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */,
 				CC28EB4D1F7F3F5B004463B3 /* KthLargest.swift in Sources */,
+				CC7CDFE51FDD140500A2BA36 /* Shuffle.swift in Sources */,
 				CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */,
 				CCD16AF31F9E488D009D1F37 /* QuickSort.swift in Sources */,
 				CC20DE961F97AFBE0057990E /* LongestCommonSubsequence.swift in Sources */,
