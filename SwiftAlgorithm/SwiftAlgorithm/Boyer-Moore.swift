@@ -15,9 +15,9 @@ extension String {
         guard !self.isEmpty else { return nil }
         
         // 缓存需要匹配字符串的长度
-        let patternLength = pattern.characters.count
+        let patternLength = pattern.count
         guard patternLength > 0 else { return self.startIndex }
-        guard patternLength <= characters.count else { return nil }
+        guard patternLength <= count else { return nil }
         
         // 进行匹配时，使用skipTable决定跳过的长度
         // 如果在pattern存在相同字符，则以小的为准，因为需要优先对其距离结尾更近的字符

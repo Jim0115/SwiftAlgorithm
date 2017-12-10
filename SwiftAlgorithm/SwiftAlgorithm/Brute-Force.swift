@@ -8,12 +8,12 @@
 
 extension String {
     func bruteForceIndex(of pattern: String) -> String.Index? {
-        for i in characters.indices {
+        for i in indices {
             var j = i
             var found = true
             
-            for p in pattern.characters.indices {
-                if j == characters.endIndex || self[j] != pattern[p] {
+            for p in pattern.indices {
+                if j == endIndex || self[j] != pattern[p] {
                     found = false
                     break
                 } else {
