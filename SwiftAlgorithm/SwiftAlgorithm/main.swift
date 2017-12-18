@@ -8,27 +8,10 @@
 
 import Foundation
 
-let a = [Int](0...7)
-
-extension Array where Element: Comparable {
-    var isSorted: Bool {
-        for i in 0..<count - 1 {
-            if self[i] > self[i + 1] {
-                return false
-            }
-        }
-        return true
-    }
+do {
+    try MinimumCoinChange(coinSet: [1, 2, 5, 10, 11]).changeDynamic(128)/.count/
+    try MinimumCoinChange(coinSet: [1, 2, 5, 10, 11]).changeGreedy(128)/.count/
+} catch {
+    error/
 }
-
-var array = a + [9, 8]
-var count = 0
-Date()/
-while !array.isSorted {
-    array.fisherYatesShuffle()
-    count += 1
-}
-
-count/
-Date()/
 
