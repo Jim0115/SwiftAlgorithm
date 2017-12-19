@@ -57,23 +57,25 @@ extension MinimumCoinChange {
             
             if let cached = cache[value] { return cached }
             
+            // 记录当前value的可能解，不一定是最优解
             var tempChangeArray = [[Int]]()
             
             for coin in sortedCoinSet {
                 if value >= coin {
-                    var tempCharge = [coin]
-                    tempCharge += _changeDynamic(value - coin)
+                    var tempChange = [coin]
+                    tempChange += _changeDynamic(value - coin)
                     
-                    if tempCharge.sum == value {
-                        tempChangeArray.append(tempCharge)
+                    if tempChange.sum == value {
+                        // 找到一个 value 的可能解
+                        tempChangeArray.append(tempChange)
                     }
                 }
             }
             
-            if !tempChangeArray.isEmpty {
-                let minimumCharge = tempChangeArray.reduce(tempChangeArray.first!) { $0.count < $1.count ? $0 : $1}
-                cache[value] = minimumCharge
-                return minimumCharge
+            if let minimumChange = tempChangeArray.min(by: { $0.count < $1.count }) {
+                // 从所有可能解中找出最优解并记录
+                cache[value] = minimumChange
+                return minimumChange
             }
             
             return []
