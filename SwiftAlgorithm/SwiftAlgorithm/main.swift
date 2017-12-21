@@ -8,10 +8,6 @@
 
 import Foundation
 
-do {
-    try MinimumCoinChange(coinSet: [1, 2, 5, 10, 11]).changeDynamic(128)/.count/
-    try MinimumCoinChange(coinSet: [1, 2, 5, 10, 11]).changeGreedy(128)/.count/
-} catch {
-    error/
-}
-
+GCD.gcd(a: 3819, b: 51357)/
+GCD.iterativeGCD(a: 3819, b: 51357)/
+LCM.lcm(a: 10, b: 4)/

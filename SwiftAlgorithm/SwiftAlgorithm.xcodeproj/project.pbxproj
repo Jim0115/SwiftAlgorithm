@@ -23,6 +23,7 @@
 		CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5091B01F2454FE005E7622 /* Hanoi.swift */; };
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
 		CC65D7161FE7E67300C45EE8 /* MinimumCoinChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65D7151FE7E67300C45EE8 /* MinimumCoinChange.swift */; };
+		CC65D7191FEBDB3800C45EE8 /* GreatestCommonDivisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65D7181FEBDB3800C45EE8 /* GreatestCommonDivisor.swift */; };
 		CC79B4461FB0956D00D7563F /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79B4451FB0956D00D7563F /* RadixSort.swift */; };
 		CC7CDFE51FDD140500A2BA36 /* Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7CDFE41FDD140500A2BA36 /* Shuffle.swift */; };
 		CC8DC5AE1FADEE7800D36E3B /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */; };
@@ -82,6 +83,7 @@
 		CC5091B01F2454FE005E7622 /* Hanoi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
 		CC65D7151FE7E67300C45EE8 /* MinimumCoinChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCoinChange.swift; sourceTree = "<group>"; };
+		CC65D7181FEBDB3800C45EE8 /* GreatestCommonDivisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatestCommonDivisor.swift; sourceTree = "<group>"; };
 		CC79B4451FB0956D00D7563F /* RadixSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadixSort.swift; sourceTree = "<group>"; };
 		CC7CDFE41FDD140500A2BA36 /* Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuffle.swift; sourceTree = "<group>"; };
 		CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
@@ -190,6 +192,14 @@
 			name = "String Search";
 			sourceTree = "<group>";
 		};
+		CC65D7171FEBDB0500C45EE8 /* Mathematics */ = {
+			isa = PBXGroup;
+			children = (
+				CC65D7181FEBDB3800C45EE8 /* GreatestCommonDivisor.swift */,
+			);
+			name = Mathematics;
+			sourceTree = "<group>";
+		};
 		CC7CDFE31FDD13F200A2BA36 /* Miscellaneous */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +239,7 @@
 		CCA3EB611EE2AC3600A40151 /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				CC65D7171FEBDB0500C45EE8 /* Mathematics */,
 				CC7CDFE31FDD13F200A2BA36 /* Miscellaneous */,
 				CC40D2E41FCAB7B5001687D9 /* Compression */,
 				CC53C3881F7135DF0000B30C /* Search */,
@@ -389,6 +400,7 @@
 				CCCF78EF1FB1E0EA00022B60 /* SlowSort.swift in Sources */,
 				CCCCEBD01F83247400043D58 /* Sample.swift in Sources */,
 				CC5091B11F2454FE005E7622 /* Hanoi.swift in Sources */,
+				CC65D7191FEBDB3800C45EE8 /* GreatestCommonDivisor.swift in Sources */,
 				CC28EB4D1F7F3F5B004463B3 /* KthLargest.swift in Sources */,
 				CC7CDFE51FDD140500A2BA36 /* Shuffle.swift in Sources */,
 				CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */,
