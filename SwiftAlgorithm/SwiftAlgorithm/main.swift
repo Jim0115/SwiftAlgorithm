@@ -8,6 +8,8 @@
 
 import Foundation
 
-GCD.gcd(a: 3819, b: 51357)/
-GCD.iterativeGCD(a: 3819, b: 51357)/
-LCM.lcm(a: 10, b: 4)/
+Permutation.permutations(5, 3)/
+Permutation.permutations(9, 4)/
+Permutation.permutations(50, 6)/
+
+Permutation.permute(with: [1, 2, 3], n: 2)

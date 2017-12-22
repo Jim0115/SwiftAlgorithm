@@ -24,6 +24,7 @@
 		CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */; };
 		CC65D7161FE7E67300C45EE8 /* MinimumCoinChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65D7151FE7E67300C45EE8 /* MinimumCoinChange.swift */; };
 		CC65D7191FEBDB3800C45EE8 /* GreatestCommonDivisor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65D7181FEBDB3800C45EE8 /* GreatestCommonDivisor.swift */; };
+		CC65D71B1FECFB8400C45EE8 /* PermutationsCombinatorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC65D71A1FECFB8400C45EE8 /* PermutationsCombinatorics.swift */; };
 		CC79B4461FB0956D00D7563F /* RadixSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79B4451FB0956D00D7563F /* RadixSort.swift */; };
 		CC7CDFE51FDD140500A2BA36 /* Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7CDFE41FDD140500A2BA36 /* Shuffle.swift */; };
 		CC8DC5AE1FADEE7800D36E3B /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */; };
@@ -84,6 +85,7 @@
 		CC53C38B1F71360B0000B30C /* Boyer-Moore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Boyer-Moore.swift"; sourceTree = "<group>"; };
 		CC65D7151FE7E67300C45EE8 /* MinimumCoinChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCoinChange.swift; sourceTree = "<group>"; };
 		CC65D7181FEBDB3800C45EE8 /* GreatestCommonDivisor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatestCommonDivisor.swift; sourceTree = "<group>"; };
+		CC65D71A1FECFB8400C45EE8 /* PermutationsCombinatorics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsCombinatorics.swift; sourceTree = "<group>"; };
 		CC79B4451FB0956D00D7563F /* RadixSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadixSort.swift; sourceTree = "<group>"; };
 		CC7CDFE41FDD140500A2BA36 /* Shuffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuffle.swift; sourceTree = "<group>"; };
 		CC8DC5AD1FADEE7800D36E3B /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				CC65D7181FEBDB3800C45EE8 /* GreatestCommonDivisor.swift */,
+				CC65D71A1FECFB8400C45EE8 /* PermutationsCombinatorics.swift */,
 			);
 			name = Mathematics;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				CC65D7191FEBDB3800C45EE8 /* GreatestCommonDivisor.swift in Sources */,
 				CC28EB4D1F7F3F5B004463B3 /* KthLargest.swift in Sources */,
 				CC7CDFE51FDD140500A2BA36 /* Shuffle.swift in Sources */,
+				CC65D71B1FECFB8400C45EE8 /* PermutationsCombinatorics.swift in Sources */,
 				CC53C38C1F71360B0000B30C /* Boyer-Moore.swift in Sources */,
 				CCD16AF31F9E488D009D1F37 /* QuickSort.swift in Sources */,
 				CC20DE961F97AFBE0057990E /* LongestCommonSubsequence.swift in Sources */,
@@ -553,7 +557,9 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = J84HL5BDK2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SUPPRESS_WARNINGS = NO;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -563,7 +569,9 @@
 			buildSettings = {
 				DEVELOPMENT_TEAM = J84HL5BDK2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SUPPRESS_WARNINGS = NO;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
