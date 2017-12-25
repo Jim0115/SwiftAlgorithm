@@ -6,8 +6,6 @@
 //  Copyright © 2017年 王仕杰. All rights reserved.
 //
 
-import Foundation
-
 struct GCD {
     private init() { }
     

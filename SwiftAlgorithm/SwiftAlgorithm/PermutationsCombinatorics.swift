@@ -35,3 +35,11 @@ struct Permutation {
         }
     }
 }
+
+struct Combination {
+    private init() { }
+    
+    static func combinations(_ n: Int, choose k: Int) -> Int {
+        return Permutation.permutations(n, k) / k.factorial
+    }
+}
