@@ -8,8 +8,6 @@
 
 import Foundation
 
-Permutation.permutations(5, 3)/
-Permutation.permutations(9, 4)/
-Permutation.permutations(50, 6)/
-
-Permutation.permute(with: [1, 2, 3], n: 2)
+let a = InfixExpressionBuilder().add(operand: 5).add(operator: .add).addOpenBracket().add(operand: 5).add(operator: .add).addOpenBracket().addOpenBracket().add(operand: 1)
+.add(operator: .add).add(operand: 2).addCloseBracket().add(operator: .multiply).add(operand: 4).addCloseBracket().addCloseBracket().add(operator: .substract).add(operand: 3)/.build()
+reversePolishNotation(expression: a)/

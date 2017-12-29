@@ -52,3 +52,9 @@ extension Stack: CustomStringConvertible {
         }
     }
 }
+
+extension Stack {
+    func makeIterator() -> AnySequence<T> {
+        return AnySequence<T>(innerArray.reversed())
+    }
+}
