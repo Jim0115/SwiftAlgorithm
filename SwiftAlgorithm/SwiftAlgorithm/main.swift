@@ -8,6 +8,4 @@
 
 import Foundation
 
-let a = InfixExpressionBuilder().add(operand: 5).add(operator: .add).addOpenBracket().add(operand: 5).add(operator: .add).addOpenBracket().addOpenBracket().add(operand: 1)
-.add(operator: .add).add(operand: 2).addCloseBracket().add(operator: .multiply).add(operand: 4).addCloseBracket().addCloseBracket().add(operator: .substract).add(operand: 3)/.build()
-reversePolishNotation(expression: a)/
+(Karatsuba.mutiply(1234, by: 5678)/ == (1234*5678)/)/
