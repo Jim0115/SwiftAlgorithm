@@ -8,4 +8,8 @@
 
 import Foundation
 
-(Karatsuba.mutiply(1234, by: 5678)/ == (1234*5678)/)/
+var a = Array2D(columns: 3, rows: 5, initialValue: 0)
+
+a[0, 0]/
+a[2, 2] = 5
+a[2, 2]/
