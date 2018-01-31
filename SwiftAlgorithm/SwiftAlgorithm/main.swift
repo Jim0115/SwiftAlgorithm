@@ -8,8 +8,17 @@
 
 import Foundation
 
-var a = Array2D(columns: 3, rows: 5, initialValue: 0)
+var set = BitSet(size: 130)
 
-a[0, 0]/
-a[2, 2] = 5
-a[2, 2]/
+set[3] = true
+
+set[5] = true
+
+set[125] = true
+
+set[3]/
+set[2]/
+
+set/
+
+
