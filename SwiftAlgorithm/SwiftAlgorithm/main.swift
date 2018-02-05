@@ -8,17 +8,11 @@
 
 import Foundation
 
-var set = BitSet(size: 130)
+var a = OrderedArray(array: [-2, 15, 8])
 
-set[3] = true
-
-set[5] = true
-
-set[125] = true
-
-set[3]/
-set[2]/
-
-set/
-
+a.insert(4)
+a.insert(0)
+a.insert(2)
+a.insert(65535)
+a/
 

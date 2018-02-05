@@ -59,6 +59,7 @@
 		CCDA52B41F74A671003F5C92 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC74C01F6FE89D003BACE0 /* MergeSort.swift */; };
 		CCDABC8E1FD6616100FD426B /* HuffmanCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDABC8D1FD6616100FD426B /* HuffmanCoding.swift */; };
 		CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDC74C01F6FE89D003BACE0 /* MergeSort.swift */; };
+		CCFDA6D22024615900926A5C /* OrderedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFDA6D12024615900926A5C /* OrderedArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,6 +119,7 @@
 		CCDA52B11F74A66A003F5C92 /* SortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTests.swift; sourceTree = "<group>"; };
 		CCDABC8D1FD6616100FD426B /* HuffmanCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuffmanCoding.swift; sourceTree = "<group>"; };
 		CCDC74C01F6FE89D003BACE0 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		CCFDA6D12024615900926A5C /* OrderedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				CC8E61A62020BF3600DBD533 /* Array2D.swift */,
+				CCFDA6D12024615900926A5C /* OrderedArray.swift */,
 				CC72ADEC2021ECDD00E33A43 /* BitSet.swift */,
 			);
 			name = Arrays;
@@ -438,6 +441,7 @@
 				CCDC74C11F6FE89D003BACE0 /* MergeSort.swift in Sources */,
 				CC329CAD1F729CFA00D45FC7 /* CountOccurrences.swift in Sources */,
 				CC329CAF1F72A39900D45FC7 /* MinimumMaximum.swift in Sources */,
+				CCFDA6D22024615900926A5C /* OrderedArray.swift in Sources */,
 				CCDABC8E1FD6616100FD426B /* HuffmanCoding.swift in Sources */,
 				CCA3EB631EE2AC3600A40151 /* main.swift in Sources */,
 				CC20DE991F9C974F0057990E /* SelectionSort.swift in Sources */,
